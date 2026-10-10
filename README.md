@@ -19,7 +19,11 @@ Research Track I (Prof. Carmine Tommaso Recchiuto), Robotics Engineering, UniGe.
 ## Structure
 
 ```
-paper/        IEEE LaTeX source (main.tex, references.bib)
-notebook/     Jupyter notebook(s) for the experiment
-results/      generated figures/data (gitignored — regenerate from the notebook)
+paper/                  IEEE LaTeX source (main.tex, references.bib)
+notebook/               Jupyter notebook(s) for the experiment
+src/                    reusable Python code extracted from the notebook once it stabilizes
+results/                generated figures/data (gitignored — regenerate from the notebook)
+pyproject.toml          project metadata and dependencies (managed with uv)
+uv.lock                 pinned, exact dependency versions — reproducible environment
+.python-version         pins this project to Python 3.12
 ```
